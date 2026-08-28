@@ -1,0 +1,56 @@
+:root {
+  --bg: #090d14;
+  --bg-2: #101722;
+  --card: #141c28;
+  --card-2: #1b2533;
+  --line: rgba(148, 175, 206, 0.16);
+  --text: #edf3fb;
+  --muted: #8b9bb0;
+  --green: #3ee07f;
+  --green-dim: rgba(62, 224, 127, 0.14);
+  --gold: #f0c75e;
+  --ucl: #79a7ff;
+  --league: #5eead4;
+  --danger: #ff6b73;
+  --danger-dim: rgba(255, 107, 115, 0.12);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  --sans: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --mono: "Cascadia Mono", "Consolas", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--sans);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(62, 224, 127, 0.12), transparent 50%),
+    radial-gradient(900px 420px at 100% 0%, rgba(121, 167, 255, 0.12), transparent 46%),
+    var(--bg);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  width: 100%;
+  max-width: none;
+  min-height: 100svh;
+  text-align: left;
+  border: 0;
+}

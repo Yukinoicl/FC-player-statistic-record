@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: fcdataserver
+  datasource:
+    url: jdbc:sqlite:./data/fcdata.db
+    driver-class-name: org.sqlite.JDBC
+    hikari:
+      maximum-pool-size: 1
+      connection-init-sql: PRAGMA busy_timeout=5000
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+
+server:
+  port: 11899
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-request: true
+      force-response: true
+
+fcdata:
+  open-browser: false
